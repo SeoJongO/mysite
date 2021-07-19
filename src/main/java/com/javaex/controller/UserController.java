@@ -91,9 +91,7 @@ public class UserController extends HttpServlet {
 			
 			// 불러오기
 			UserVo authUser = (UserVo) session.getAttribute("authUser");
-			System.out.println(authUser);
 			UserVo userVo = userDao.getUser(authUser.getId(), authUser.getPassword());
-			System.out.println(userVo);
 			
 			request.setAttribute("userVo", userVo);
 		
