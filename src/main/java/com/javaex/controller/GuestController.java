@@ -22,7 +22,6 @@ public class GuestController extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		GuestDao guestDao = new GuestDao();
 		String action = request.getParameter("action");
-		System.out.println(action);
 		System.out.print("방명록 컨트롤러: ");
 		
 		// 리스트

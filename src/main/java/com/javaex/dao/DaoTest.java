@@ -1,22 +1,18 @@
 package com.javaex.dao;
 
-import com.javaex.vo.UserVo;
+import com.javaex.vo.BoardVo;
 
 public class DaoTest {
 
 	public static void main(String[] args) {
 
-//		UserVo userVo = new UserVo ("aaa", "bbb", "ccc", "male");
-//		
-		UserDao userDao = new UserDao();
-//		userDao.Insert(userVo);
+//		BoardVo boardVo = new BoardVo("실험용 제목","실험용 내용",4);
+		BoardDao boardDao = new BoardDao();
 		
-//		System.out.println(userDao.getUserList());
+//		boardDao.write(boardVo);
 		
-		UserVo userVo = userDao.getUser("1234", "1234");
-		System.out.println(userVo);
-		
-			
+//		System.out.println(boardDao.List());
+		System.out.println(boardDao.read(5));
 	}
 
 }

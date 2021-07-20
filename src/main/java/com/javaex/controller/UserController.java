@@ -117,7 +117,8 @@ public class UserController extends HttpServlet {
 			}
 			
 			WebUtil.redirect(request, response, "/mysite/main");
-		}
+			
+		} 
 		
 	}
 
